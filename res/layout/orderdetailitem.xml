@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingRight="6dp" >
+
+    <ImageView
+        android:id="@+id/img_orderdetail"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:src="@drawable/kfc"
+        android:background="@drawable/dish_strick"
+        android:padding="1dp" />
+
+    <TextView
+        android:id="@+id/tx_orderdetailitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/img_orderdetail"
+        android:text="肯德基糖醋里脊盖饭"
+        android:textColor="#666"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tx_orderdetail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_orderdetail"
+        android:layout_alignLeft="@id/tx_orderdetailitem_name"
+        android:layout_marginBottom="4dp"
+        android:text="￥20.00"
+        android:textColor="#ef5b51"
+        android:textSize="18sp" />
+
+    <Button 
+        android:id="@+id/detail_add"
+        android:layout_height="28dp"
+        android:layout_width="28dp"
+        android:background="@drawable/detail_add"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/img_orderdetail"
+        android:layout_marginRight="8dp"/>
+    
+    <Button 
+        android:id="@+id/detail_item_count"
+        android:layout_height="28dp"
+        android:layout_width="34dp"
+        android:background="@drawable/detail_count"
+        android:layout_toLeftOf="@id/detail_add"
+        android:layout_alignBottom="@id/img_orderdetail"
+        android:text="1"/>
+    
+    <Button 
+        android:id="@+id/detail_decline"
+        android:layout_height="28dp"
+        android:layout_width="28dp"
+        android:background="@drawable/detail_decline"
+        android:layout_toLeftOf="@id/detail_item_count"
+        android:layout_alignBottom="@id/img_orderdetail"/>
+
+</RelativeLayout>

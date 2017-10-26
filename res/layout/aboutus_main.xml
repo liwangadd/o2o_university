@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/navagitlayout"
+        style="@style/titlebar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/aboutus_back"
+            style="@style/backimg"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+        <ImageView 
+            android:layout_alignParentBottom="true"
+            style="@style/title_divider"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navagitlayout" >
+
+        <LinearLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公司名称 : "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/emailtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="大连信风软件科技有限公司"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/email"
+                android:text="联系邮箱 : "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/phonenumtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="trawindsoft@163.com"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/companyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phonenum"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系电话 : "
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phonenumtext"
+                android:layout_toRightOf="@+id/companyname"
+                android:text="13716517677"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/qq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyname"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服  QQ : "
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/companyname"
+                android:layout_toRightOf="@+id/qq"
+                android:text="627713843"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="4dp"
+        android:textColor="#7f7f7f"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:text="Copyright@大连信风软件科技有限公司"/>
+
+</RelativeLayout>

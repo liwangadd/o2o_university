@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:background="#fff"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" >
+
+    <ImageView
+        android:id="@+id/img_meal"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/kfc"
+        android:background="@drawable/dish_strick"
+        android:padding="1dp" />
+
+    <TextView
+        android:id="@+id/txt_mealname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_meal"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/img_meal"
+        android:text="西红柿盖饭"
+        android:textColor="#666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txt_meal_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_mealname"
+        android:layout_marginLeft="4dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_meal"
+        android:text="月销量  : 80"
+        android:textColor="#7f7f7f"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txt_mealprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/img_meal"
+        android:text="￥10"
+        android:textColor="#ef5b51"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/img_resdish_plus"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ordersureitem_plus" />
+
+    <TextView
+        android:id="@+id/tx_resdish_i_num"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_toLeftOf="@id/img_resdish_plus"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="1"
+        android:visibility="gone"
+        android:textColor="#d10"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/img_resdish_sub"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        android:layout_toLeftOf="@id/tx_resdish_i_num"
+        android:background="@drawable/ordersureitem_sub" />
+
+    <ImageView
+        android:id="@+id/img_resdish_choice"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp" >
+    </ImageView>
+
+</RelativeLayout>

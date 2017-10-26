@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/head_yijian"
+        style="@style/titlebar" >
+
+        <ImageView
+            android:id="@+id/img_yijian_back"
+            style="@style/backimg"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back" />
+
+        <TextView
+            style="@style/titletext"
+            android:layout_centerInParent="true"
+            android:text="一键宅" />
+
+        <ImageView
+            android:id="@+id/img_yijian_map"
+            style="@style/titleicon"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit" />
+
+        <ImageView
+            style="@style/title_divider"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/yijianzhai_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/add_new_mealset" >
+
+        <TextView
+            android:id="@+id/yijianzhi_add_new_meal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape_selector"
+            android:gravity="center"
+            android:text="添加新套餐"
+            android:textColor="@color/button_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/yijianzhai_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/yijianzhai_linear_layout"
+        android:layout_below="@id/head_yijian"
+        android:background="#fff" >
+    </ExpandableListView>
+
+    <ProgressBar
+        android:id="@+id/probar_yijian"
+        style="@style/progressbar_style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/progressbar_circle"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <CheckBox 
+        android:id="@+id/add_to_set_check"
+        android:layout_height="28dp"
+        android:layout_width="36dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="20dp"/>
+    <TextView 
+        android:id="@+id/add_to_set_name"
+        android:layout_height="36dp"
+        android:layout_width="wrap_content"
+        android:text="西门小吃"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/add_to_set"/>
+</LinearLayout>

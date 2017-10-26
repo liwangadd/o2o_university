@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout 
+        android:id="@+id/rll_title"
+        android:orientation="horizontal"
+        style="@style/titlebar">
+        <ImageView 
+            android:id="@+id/img_return"
+            android:layout_centerVertical="true"
+             style="@style/backimg"/>
+        <TextView
+            style="@style/titletext"
+            android:id="@+id/txt_restaurant" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="搜索记录" 
+            />
+        
+    </RelativeLayout>
+   
+     <ListView 
+        android:id="@+id/list_searchresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rll_title"
+        >
+    </ListView>
+   
+    
+
+</RelativeLayout>

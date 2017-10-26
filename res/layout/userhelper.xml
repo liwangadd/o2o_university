@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/navagitlayout"
+        style="@style/titlebar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="平台介绍"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/userhelper_back"
+            style="@style/backimg"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+        <ImageView 
+            android:layout_alignParentBottom="true"
+            style="@style/title_divider"/>
+    </RelativeLayout>
+    
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="巨饿-专注于校园的O2O点餐平台"
+        android:textSize="20sp"
+        android:textColor="#ef5b51"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+    
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="通过本款软件使校园用户得到更加优质的服务，即不出寝室门，就能获得干净的、便宜的、个性化的外卖定制套餐，将校园周边美食一网打尽。"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"/>
+	
+</LinearLayout>

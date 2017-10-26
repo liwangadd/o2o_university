@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/child_img"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentLeft="true"
+        android:padding="4dp"
+        android:src="@drawable/kfc" />
+
+    <TextView
+        android:id="@+id/child_dish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/child_img"
+        android:text="肯德基糖醋里脊盖饭"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/child_dish_number_text"
+        android:layout_width="90dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@id/child_img"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/child_img"
+        android:gravity="center"
+        android:text="x1"
+        android:textSize="14dp"
+        android:paddingLeft="30dp"
+        android:background="@drawable/child_dish_number" />
+
+    <Button
+        android:id="@+id/child_decline"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@id/child_img"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/child_img"
+        android:background="@drawable/detail_decline"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/child_item_count"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@id/child_img"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/child_decline"
+        android:background="@drawable/detail_count"
+        android:focusable="false"
+        android:text="1"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/child_add"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@id/child_img"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/child_item_count"
+        android:background="@drawable/detail_add"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/child_price"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:text="Y15.00"
+        android:textColor="#ef5b51"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/head_orderdetail"
+        style="@style/titlebar" >
+
+        <ImageView
+            android:id="@+id/img_orderdetail_back"
+            style="@style/backimg"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/title1"
+            style="@style/titletext"
+            android:layout_centerInParent="true"
+            android:text="已选菜品" />
+
+        <ImageView
+            style="@style/title_divider"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <com.yijianzhai.jue.view.XListView
+        android:id="@+id/order_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detail1"
+        android:layout_below="@+id/head_orderdetail"
+        android:layout_marginRight="18dp"
+        android:divider="@drawable/right_divider"
+        android:dividerHeight="1dp"
+        android:paddingLeft="18dp"
+        android:scrollbars="none"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/detail1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detail2"
+        android:background="#ececec" >
+
+        <TextView
+            android:id="@+id/order_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="5元"
+            android:textColor="#ef5b51"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/order_delivery"
+            android:text="配送费 : "
+            android:textColor="#404143"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_orderdetail_again" >
+
+        <TextView
+            android:id="@+id/detail_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:singleLine="true"
+            android:text="￥0.00"
+            android:textColor="#ef5b51"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detail_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/detail_sum"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="0份外卖"
+            android:textColor="#404143"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_orderdetail_again"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/button_shape_selector"
+        android:text="确认外卖"
+        android:textColor="@color/button_color" />
+    
+      <ProgressBar
+        android:id="@+id/probar_yijian"
+        style="@style/progressbar_style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/progressbar_circle"
+        android:visibility="gone" />
+
+</RelativeLayout>

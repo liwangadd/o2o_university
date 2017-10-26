@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee" >
+
+    <RelativeLayout
+        android:id="@+id/usercenter_delevery_title_layout"
+        style="@style/titlebar" >
+
+        <ImageView
+            android:id="@+id/usercenter_delevery_backup"
+            style="@style/backimg"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/usercenter_delevery_title_text"
+            style="@style/titletext"
+            android:layout_centerInParent="true"
+            android:text="收货地址"
+            android:textSize="24sp" />
+
+        <ImageView
+            style="@style/title_divider"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/adress_edit"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/local_address"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/usercenter_delevery_title_layout"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/location_adress"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="50dp"
+        android:text="定位到当前位置"
+        android:textColor="#404143" />
+
+    <Button
+        android:id="@+id/delevery_new_address_button"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_shape_selector"
+        android:gravity="center"
+        android:text="添加新的收获地址"
+        android:textColor="@color/button_color"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/usercenter_delevery_address_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/delevery_new_address_button"
+        android:layout_below="@id/local_address"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        android:divider="@drawable/right_divider"
+        android:dividerHeight="1dp" />
+    
+     <ProgressBar
+        android:id="@+id/probar_yijian"
+        style="@style/progressbar_style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/progressbar_circle"
+        android:visibility="gone" />
+
+</RelativeLayout>

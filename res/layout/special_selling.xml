@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    <RelativeLayout
+        android:id="@+id/navagitlayout"
+        style="@style/titlebar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="今日特卖"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/special_selling_back"
+            style="@style/backimg"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+        <ImageView 
+            android:layout_alignParentBottom="true"
+            style="@style/title_divider"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/special_selling_adv"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="6dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/navagitlayout"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/special_selling_adv" />
+    
+    <RelativeLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/special_selling_adv">
+    
+	    <ProgressBar 
+	        android:id="@+id/special_selling_wait"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    style="@style/progressbar_style1"
+		    android:layout_centerInParent="true"/>
+    
+    </RelativeLayout>
+    
+    <GridView 
+        android:id="@+id/special_selling_list"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:scrollbars="none"
+        android:layout_below="@id/special_selling_adv"
+        android:numColumns="2"
+        android:layout_marginBottom="16dp"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="4dp"
+        android:visibility="gone" />
+</RelativeLayout>

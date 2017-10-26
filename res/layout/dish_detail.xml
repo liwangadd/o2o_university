@@ -1,0 +1,83 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/yijianzhai_dialog_dishname"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="潜江油焖大虾"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/yijianzhai_dialog_img"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="200dp"
+        android:layout_below="@id/yijianzhai_dialog_dishname"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:src="@drawable/dazhaxie" />
+
+    <TextView
+        android:id="@+id/yijianzhai_dialog_price"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/yijianzhai_dialog_img"
+        android:layout_margin="8dp"
+        android:text="￥100"
+        android:textColor="#ef5b51"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/add_to_yijianzhai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/yijianzhai_dialog_img"
+        android:layout_below="@id/yijianzhai_dialog_img"
+        android:layout_marginTop="4dp"
+        android:text="加入一键宅"
+        android:background="#7f7f7f"
+        android:textColor="#fff"
+        android:padding="6dp"
+        android:textSize="14sp"
+        android:layout_marginRight="8dp"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/add_new_yijianzhai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_toLeftOf="@+id/add_to_yijianzhai"
+        android:layout_below="@id/yijianzhai_dialog_img"
+        android:layout_marginTop="4dp"
+        android:text="创建新套餐"
+        android:background="#7f7f7f"
+        android:textColor="#fff"
+        android:padding="6dp"
+        android:textSize="14sp"
+        android:layout_marginRight="8dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/yijianzhai_dialog_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yijianzhai_dialog_price"
+        android:layout_margin="12dp"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="暂无介绍"
+        android:minHeight="48dp" />
+
+</RelativeLayout>

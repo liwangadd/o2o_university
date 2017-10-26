@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/navagitlayout"
+        style="@style/titlebar" >
+
+        <TextView
+            style="@style/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新增收货地址"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/userdata_back"
+            android:layout_centerVertical="true"
+             style="@style/backimg" />
+
+        <Button
+            android:id="@+id/userdata_save"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/save" />
+        <ImageView 
+            android:layout_alignParentBottom="true"
+            style="@style/title_divider"/>
+    </RelativeLayout>
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    >
+        <LinearLayout 
+            android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+            >
+  
+    <LinearLayout
+        android:id="@+id/delivery_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=" 收货人 : "
+            android:textColor="#666"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="200dp"
+            android:paddingLeft="5dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/new_acount"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="联系电话  : "
+            android:textColor="#666"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:paddingLeft="5dp"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/new_acount"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/right_divider"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="地区信息 : "
+            android:textColor="#666"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/edt_district"
+           android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:gravity="left"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="8dp"
+            android:textSize="15sp"
+            android:background="@drawable/new_acount" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="详细地址  : "
+            android:textColor="#666"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/new_acount"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/right_divider"
+        android:layout_marginTop="15dp"/>
+    
+	<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:text="地址标签  : "
+	            android:textColor="#666"
+	            android:textSize="15sp" />
+	
+	        <EditText
+	            android:id="@+id/edt_label"
+	            android:layout_width="170dp"
+	            android:layout_height="25dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="8dp"
+	            android:background="@drawable/new_acount"
+	            android:hint="请选择标签/选填"
+	            android:textSize="15sp"
+	            android:paddingLeft="3dp" />
+	</LinearLayout>
+	
+	<LinearLayout 
+	    	android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="8dp"
+	        android:orientation="horizontal"
+	        android:layout_marginLeft="86dp" >
+	        
+	    <TextView
+	        
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="常用标签 : "
+	        android:textColor="#666"
+	        android:textSize="14sp"
+	        android:layout_gravity="center_vertical" />
+	    <TextView 
+	        android:id="@+id/edt_dorm"
+	        
+	        android:layout_height="20dp"
+	        android:layout_width="40dp"
+	        android:textSize="14sp"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:textColor="#666"
+	        android:background="@drawable/new_acount"
+	        android:text="宿舍"/>
+	    <TextView 
+	        
+	        android:id="@+id/edt_teachbuild"
+	        android:layout_height="20dp"
+	        android:layout_width="54dp"
+	        android:textSize="14sp"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:textColor="#666"
+	        android:background="@drawable/new_acount"
+	        android:text="教学楼"
+	        android:layout_marginLeft="8dp"/>
+	    <TextView 
+	        android:id="@+id/edt_library"
+	        android:layout_height="20dp"
+	        android:layout_width="54dp"
+	        android:textSize="14sp"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:textColor="#666"
+	        android:layout_marginLeft="8dp"
+	        android:background="@drawable/new_acount"
+	        android:text="图书馆"/>
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="8dp"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="86dp">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="常用标签 : "
+	        android:textColor="#666"
+	        android:textSize="14sp"
+	        android:layout_gravity="center_vertical" />
+	    <TextView 
+	        android:id="@+id/edt_study"
+	        android:layout_height="20dp"
+	        android:layout_width="54dp"
+	        android:textSize="14sp"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:textColor="#666"
+	        android:layout_marginLeft="8dp"
+	        android:background="@drawable/new_acount"
+	        android:text="自习室"/>
+	</LinearLayout>
+    
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

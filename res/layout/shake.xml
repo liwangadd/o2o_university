@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/head_shake"
+        style="@style/titlebar" >
+
+        <ImageView
+            android:id="@+id/img_shake_back"
+          android:layout_centerVertical="true"
+             style="@style/backimg" />
+
+        <TextView
+            style="@style/titletext"
+            android:layout_centerInParent="true"
+            android:text="摇一摇" />
+        
+        <ImageView 
+            android:layout_alignParentBottom="true"
+            style="@style/title_divider"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shake_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head_shake" >
+
+        <RelativeLayout
+            android:id="@+id/shake_border"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp" >
+
+            <ImageView
+                android:id="@+id/img_shake_icon"
+                
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shake_border"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="摇一摇 出美食"
+            android:textColor="#eee"
+            android:textSize="24sp" />
+        
+        <ImageView 
+            android:id="@+id/img_shake_bowl"
+            android:layout_width="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="0dp"
+            android:layout_marginLeft="12dp"
+            
+            android:layout_above="@+id/view_shake_space"
+            />
+        
+        <ImageView 
+            android:id="@+id/img_shake_cake"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_above="@+id/view_shake_space"
+            />
+        <View 
+            android:id="@+id/view_shake_space"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="0dp"
+            />
+        <ImageView
+        android:id="@+id/img_shake_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+         />
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

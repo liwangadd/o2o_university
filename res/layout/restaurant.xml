@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee" >
+
+    <RelativeLayout
+        android:id="@+id/rll_title"
+        style="@style/titlebar"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/res_img_return"
+            android:layout_centerVertical="true"
+             style="@style/backimg" />
+
+        <TextView
+            android:id="@+id/txt_restaurant"
+            style="@style/titletext"
+            android:layout_centerHorizontal="true"
+            android:text="西门子老罗店"
+            android:layout_centerVertical="true"
+            android:textSize="19sp" />
+
+        <ImageView 
+            style="@style/title_divider"
+            android:layout_alignParentBottom="true"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/res1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="#f1f1f1"
+        android:layout_below="@id/rll_title">
+        <ImageView 
+            android:id="@+id/restaurant_icon"
+            android:layout_height="65dp"
+            android:layout_width="65dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/danta"/>
+        
+        <TextView 
+            android:id="@+id/txt_resttype"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@id/restaurant_icon"
+            android:text="西门子老罗店"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/restaurant_icon"
+            android:layout_marginLeft="8dp"/>
+        
+        <TextView 
+            android:id="@+id/res3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="月销量 :"
+            android:textSize="15sp"
+            android:textColor="#7f7f7f"
+            android:layout_alignBottom="@id/restaurant_icon"
+            android:layout_toRightOf="@id/restaurant_icon"
+            android:layout_marginLeft="8dp"/>
+        
+        <TextView 
+            android:id="@+id/sale_count"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="80"
+            android:textColor="#7f7f7f"
+            android:textSize="15sp"
+            android:layout_marginLeft="2dp"
+            android:layout_alignBottom="@id/restaurant_icon"
+            android:layout_toRightOf="@id/res3"/>
+        
+    </RelativeLayout>
+    
+    <ImageView
+        style="@style/title_divider"
+        android:layout_height="1dp"
+        android:layout_below="@id/res1"/>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:id="@+id/res4"
+        android:layout_below="@id/res1">
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="配送模式 : "
+            android:id="@+id/res_item1"
+            android:textSize="15sp"
+            android:textColor="#7f7f7f"/>
+        <TextView 
+            android:id="@+id/res_price"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#7f7f7f"
+            android:layout_toRightOf="@id/res_item1"/>
+        <TextView 
+            android:id="@+id/res_item2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="配送时间 : "
+            android:textSize="15sp"
+          	android:layout_below="@id/res_item1"
+            android:textColor="#7f7f7f"/>
+        <TextView 
+            android:id="@+id/res_time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="18:00-21:00"
+            android:textSize="15sp"
+            android:textColor="#7f7f7f"
+            android:layout_toRightOf="@id/res_item2"
+            android:layout_alignTop="@id/res_item2"/>
+        <TextView 
+            android:id="@+id/res_item3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="商家地址 : "
+            android:textSize="15sp"
+            android:layout_below="@id/res_item2"
+            android:textColor="#7f7f7f"/>
+        <TextView 
+            android:id="@+id/res_adress"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="知语山"
+            android:textSize="15sp"
+            android:textColor="#7f7f7f"
+            android:layout_toRightOf="@id/res_item3"
+            android:layout_alignTop="@id/res_item3"/>
+        <TextView 
+            android:id="@+id/res_item4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="送餐范围 : "
+            android:textSize="15sp"
+            android:layout_below="@id/res_item3"
+            android:textColor="#7f7f7f"/>
+        <TextView 
+            android:id="@+id/res_range"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="大连理工大学软件学院"
+            android:textSize="15sp"
+            android:textColor="#7f7f7f"
+            android:layout_toRightOf="@id/res_item4"
+            android:layout_alignTop="@id/res_item4"/>
+        
+        <ImageView 
+            android:id="@+id/btn_detail"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/phone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/dialog_rest"
+        style="@style/progressbar_style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+	<RelativeLayout 
+	    
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_below="@id/res4"
+	    android:background="#f5f5f5"
+	    android:visibility="visible">
+	    <LinearLayout
+	        android:id="@+id/res5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	         >
+	
+	       <ListView 
+	           android:layout_width="56dp"
+	           android:layout_height="wrap_content"
+	           android:id="@+id/resturant_left"/>
+	
+	        
+	    </LinearLayout>
+	    <ListView 
+	        android:id="@+id/rest_list"
+	        android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="4dp"
+             android:background="#ffffff"
+             android:divider="@drawable/right_divider"
+             android:dividerHeight="1dp"
+             android:scrollbars="none"
+             android:layout_toRightOf="@id/res5"
+             android:layout_marginBottom="43dp"/>
+    </RelativeLayout>
+    
+	<LinearLayout
+        android:id="@+id/rll_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ececec"
+        android:orientation="horizontal"
+         >
+
+        <TextView
+            android:id="@+id/txt_count"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:textColor="#ef5b51"
+            android:text="￥0.00元"
+            android:paddingTop="10dp"
+            android:textSize="15sp"
+        	android:paddingBottom="10dp" />
+        <ImageView 
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/res_divider_h"/>
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="配送费 : "
+            android:layout_marginLeft="6dp"
+            android:textColor="#7f7f7f"/>
+        
+        <TextView 
+            android:id="@+id/txt_delivery_for"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="5元"
+            android:textColor="#7f7f7f"/>
+        
+        <Button 
+            android:id="@+id/btn_makeorder"
+            android:layout_height="33dp"
+            android:layout_width="90dp"
+            android:padding="3dp"
+            android:background="@drawable/res_ok"
+            android:text="选好了"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ffe5d2"
+            android:layout_marginLeft="30dp"
+            android:visibility="gone"/>
+        <TextView 
+            android:id="@+id/txt_ifdelivery"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="还差 ￥ 99元起送"
+            android:layout_gravity="center_vertical"
+            android:textColor="#7f7f7f"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+    
+	<ImageView 
+	    android:layout_height="1dp"
+	    android:layout_width="match_parent"
+	    android:src="@drawable/res_divider"
+	    android:layout_above="@id/rll_store"/>
+
+</RelativeLayout>

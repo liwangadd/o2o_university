@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/home_page_title_layout"
+        style="@style/titlebar" >
+
+        <TextView
+            android:id="@+id/home_page_title_text"
+            style="@style/titletext"
+            android:layout_centerInParent="true"
+            android:text="首页" />
+
+        <ImageView
+            style="@style/title_divider"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/mark2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/home_page_title_layout" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/homepage_logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="24dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/homepage_founction_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mark2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/homepage_linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/homepage_outer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/new_outer" />
+
+            <Button
+                android:id="@+id/homepage_user_center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/new_user" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/homepage_linearlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homepage_linearlayout1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/homepage_shake"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/new_shake" />
+
+            <Button
+                android:id="@+id/homepage_ofen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/new_ofen" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/homepage_home"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_below="@id/homepage_linearlayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/new_home" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/homepage_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homepage_founction_layout"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:divider="@drawable/new_divider"
+        android:dividerHeight="2dp"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homepage_founction_layout"
+        android:orientation="vertical" >
+        <ImageView 
+            android:id="@+id/preferential"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/preferential"/>
+        <ImageView 
+            android:id="@+id/special_selling"
+            android:layout_height="0dp"
+			android:layout_weight="1"
+			android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/special_selling"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/preferencial_bg" >
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+       >
+    
+	    <TextView 
+	        android:id="@+id/preference_item_name"
+	        android:layout_height="wrap_content"
+	        android:layout_width="180dp"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        android:text="经典牛肉包子套餐"
+	        android:textSize="20sp"/>
+	    
+	    <TextView 
+	        android:id="@+id/prefecencial_go_buy"
+	        android:layout_height="wrap_content"
+	        android:layout_width="72dp"
+	        android:background="@drawable/preferencial_go_buy"
+	        android:text="快去抢购"
+	        android:textColor="#fff"
+	        android:paddingLeft="4dp"
+	        android:paddingRight="4dp"
+	        android:gravity="center"
+	        android:textSize="16sp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_alignBottom="@id/preference_item_name"
+	        
+	        android:layout_alignParentRight="true"/>
+	    
+	    <TextView
+	        android:id="@+id/preferencial_what"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/preferencial_price"
+	        android:layout_below="@id/preference_item_name"
+	        android:layout_marginBottom="4dp"
+	        android:layout_marginTop="4dp"
+	        android:ellipsize="marquee"
+	        android:singleLine="true"
+	        android:text="牛肉包6个+辣白菜1碟+可口可乐1罐"
+	        android:textColor="#7f7f7f"
+	        android:textSize="14sp" />
+	    
+	    <TextView 
+	        android:id="@+id/preferencial_1"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_below="@+id/preferencial_what"
+	        android:text="原件 : "
+	        android:textSize="16sp"/>
+	    
+	    <TextView 
+	        android:id="@+id/preferencial_real_price"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="￥30"
+	        android:textSize="16sp"
+	        android:textColor="#fff"
+	        android:gravity="center"
+	        android:background="@drawable/real_price"
+	        android:layout_toRightOf="@id/preferencial_1"
+	        android:layout_below="@id/preferencial_what"/>
+	    
+	    <TextView 
+	        android:id="@+id/preferencial_2"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="特价 : "
+	        android:textSize="16sp"
+	        android:layout_marginLeft="32dp"
+	        android:layout_toRightOf="@id/preferencial_real_price"
+	        android:layout_below="@id/preferencial_what"/>
+	    
+	    <TextView 
+	        android:id="@+id/preferencial_price"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="￥18"
+	        android:textSize="16sp"
+	        android:textColor="#eb5f51"
+	        android:layout_toRightOf="@id/preferencial_2"
+	        android:layout_below="@id/preferencial_what"/>
+    
+    </RelativeLayout>
+
+</RelativeLayout>

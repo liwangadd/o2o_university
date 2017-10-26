@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:background="@drawable/special_selling_bg"
+    android:gravity="center" >
+    
+    <ImageView 
+        android:id="@+id/special_selling_img"
+        android:layout_height="120dp"
+        android:layout_width="180dp"
+        android:src="@drawable/special_selling_img"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="4dp"/>
+    
+    <TextView 
+        android:id="@+id/special_selling_name"
+        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:layout_below="@id/special_selling_img"
+        android:text="鲜虾大烩"
+        android:textSize="16sp"
+        android:singleLine="true"/>
+    
+    <TextView 
+        android:id="@+id/special_selling_price"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="￥30"
+        android:layout_below="@id/special_selling_img"
+        android:layout_alignRight="@id/special_selling_img"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

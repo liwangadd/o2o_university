@@ -1,0 +1,159 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    tools:context=".UsercenterActivity" >
+
+    <RelativeLayout
+        android:id="@+id/navagitlayout"
+        style="@style/titlebar" >
+
+        <ImageView
+            android:id="@+id/usercenter_back"
+            style="@style/backimg"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            style="@style/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户中心" />
+
+        <ImageView
+            style="@style/title_divider"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navagitlayout"
+        android:background="#ffffff"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp" >
+
+        <ImageView
+            android:id="@+id/userphoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="24dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/head_sculpture" />
+
+        <TextView
+            android:id="@+id/usernametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/userphoto"
+            android:layout_toRightOf="@id/userphoto"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="未命名"
+            android:textColor="#ec5b51"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userphonenumtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_detail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/userphoto"
+            android:text="快捷登录状态"
+            android:textColor="#404143"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/user_detail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/user_detail" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userlayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/order_query"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/order_query"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="50dp"
+            android:text="订单查询"
+            android:textColor="#404143" />
+
+        <Button
+            android:id="@+id/adress_manager"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/adress_manage"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="50dp"
+            android:text="收货地址管理"
+            android:textColor="#404143" />
+
+        <Button
+            android:id="@+id/my_collection"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/my_collection"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="50dp"
+            android:text="常去的店"
+            android:textColor="#404143" />
+
+        <Button
+            android:id="@+id/soft_about"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/soft_about"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="50dp"
+            android:text="软件相关"
+            android:textColor="#404143" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_login_state"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:gravity="left"
+        android:text="您目前是快捷登录状态，为了您的账户安全请登录"
+        android:textColor="#7c7777"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/user_login"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_shape_selector"
+        android:gravity="center"
+        android:text="用户登录"
+        android:textColor="@color/button_color"
+        android:textSize="20sp" />
+
+</RelativeLayout>

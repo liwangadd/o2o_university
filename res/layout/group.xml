@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/group_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shrink"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/group_mealset_name"
+        android:layout_width="72dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@id/group_button"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="未命名"
+        android:textColor="#ef5b51"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/group_mealset_name_edit"
+        android:layout_width="72dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@id/group_button"
+        android:background="@drawable/edittext"
+        android:gravity="center_vertical"
+        android:hint="未命名"
+        android:singleLine="true"
+        android:textColor="#ef5b51"
+        android:textColorHint="#ef5b51"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/group_price"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@id/group_button"
+        android:gravity="center_vertical"
+        android:text="Y33"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/group_makesure"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:text="下单"
+        android:background="#ffffff"
+        android:textColor="#dd613d"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/group_change_mealset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:text="修改"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/group_del_mealset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@id/group_change_mealset_button"
+        android:text="删除"
+        android:textColor="#ef5b51"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

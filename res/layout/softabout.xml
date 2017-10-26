@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+     <RelativeLayout
+        style="@style/titlebar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="软件相关"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/softabout_back"
+            style="@style/backimg"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+        <ImageView 
+            android:layout_alignParentBottom="true"
+            style="@style/title_divider"/>
+    </RelativeLayout>
+    
+     <LinearLayout 
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:orientation="vertical">
+    
+	    <Button 
+	        android:layout_height="40dp"
+	        android:layout_width="match_parent"
+	        android:background="@drawable/about_third"
+	        android:text="意见反馈"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="25dp"
+	        android:id="@+id/feedback"
+	        android:layout_marginTop="15dp"
+	        android:textColor="#7f7f7f" />
+	    
+	    <Button 
+	        android:id="@+id/update"
+	        android:layout_height="40dp"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="25dp"
+	        android:layout_width="match_parent"
+	        android:background="@drawable/about_first"
+	        android:text="检查更新"
+	        android:textColor="#7f7f7f" />
+	    
+	    <Button 
+	        android:id="@+id/grade"
+	        android:layout_height="40dp"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="25dp"
+	        android:layout_width="match_parent"
+	        android:background="@drawable/about_second"
+	        android:text="去评分"
+	        android:textColor="#7f7f7f" />
+	    
+	    <Button 
+	        android:id="@+id/heip"
+	        android:layout_height="40dp"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="25dp"
+	        android:layout_width="match_parent"
+	        android:background="@drawable/about_third"
+	        android:text="平台介绍"
+	        android:layout_marginTop="15dp"
+	        android:textColor="#7f7f7f" />
+	    
+	    <Button 
+	        android:id="@+id/protocol"
+	        android:layout_height="40dp"
+	        android:layout_width="match_parent"
+	        android:background="@drawable/about_first"
+	        android:text="使用协议"
+	        android:textColor="#7f7f7f"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="25dp" />
+	    
+	    <Button 
+	        android:id="@+id/aboutus"
+	        android:layout_height="40dp"
+	        android:layout_width="match_parent"
+	        android:background="@drawable/about_second"
+	        android:text="关于我们"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="25dp"
+	        android:textColor="#7f7f7f" />
+	</LinearLayout>
+	
+</LinearLayout>

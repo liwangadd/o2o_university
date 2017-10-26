@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/yijianzhai_makesure_head_ordersure"
+        style="@style/titlebar" >
+
+        <ImageView
+            android:id="@+id/yijianzhai_makesure_img_ordersure_back"
+            style="@style/backimg"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            style="@style/titletext"
+            android:layout_centerInParent="true"
+            android:text="订单确认" />
+
+        <ImageView
+            style="@style/title_divider"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/yijianzhai_makesure_ordersure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yijianzhai_makesure_head_ordersure"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="收货人 : "
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="联系电话 : "
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="详细地址 : "
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/yijianzhai_makesure_sure_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="无名氏"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/yijianzhai_makesure_sure_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="无"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/yijianzhai_makesure_sure_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="点击添加收货地址"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:id="@+id/yijianzhai_makesure_ordersure_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/yijianzhai_makesure_order1"
+        android:layout_below="@id/yijianzhai_makesure_ordersure"
+        android:divider="@drawable/right_divider" />
+
+    <RelativeLayout
+        android:id="@+id/yijianzhai_makesure_order1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_ordersure" >
+
+        <EditText
+            android:id="@+id/yijianzhai_makesure_addition"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:background="#f1f1f1"
+            android:gravity="top"
+            android:hint="请输入附加说明"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/yijianzhai_makesure_sure_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/yijianzhai_makesure_addition"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp"
+            android:singleLine="true"
+            android:text="￥999.00"
+            android:textColor="#ef5b51"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/yijianzhai_makesure_sure_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yijianzhai_makesure_addition"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/yijianzhai_makesure_sure_sum"
+            android:text="3份外卖"
+            android:textColor="#404143"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/yijianzhai_makesure_send_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yijianzhai_makesure_addition"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/yijianzhai_makesure_sure_count"
+            android:text="配送费 ￥15"
+            android:textColor="#ef5b51"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_ordersure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/order_sure"
+        android:text="确认外卖"
+        android:textColor="#eee" />
+
+    <ProgressBar
+        android:id="@+id/probar_yijian"
+        style="@style/progressbar_style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/progressbar_circle"
+        android:visibility="gone" />
+
+</RelativeLayout>

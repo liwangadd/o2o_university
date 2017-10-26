@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/query_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:text="暂无数据"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/query_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/query_name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:text="2014/8/10"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/query_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/query_time"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="￥ 15.00"
+        android:textColor="#ef5b51"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/query_add_meal_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/query_price"
+        android:layout_below="@id/query_time"
+        android:layout_marginLeft="72dp"
+        android:background="@drawable/button_shape_selector"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:text="加入一键宅"
+        android:textColor="@color/button_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/query_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/query_time"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/query_time"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:text="选择"
+        android:textColor="#ef5b51"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/query_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/query_price"
+        android:layout_below="@id/query_time"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/query_add_meal_set"
+        android:text="取消订单"
+        android:textColor="#ef5b51"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/query_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/query_price"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/query_select"
+        android:layout_below="@id/query_time"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="暂无状态"
+        android:textColor="#ef5b51"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/head_shake_dialog"
+        style="@style/titlebar"
+        android:background="#ef5b51" >
+
+        <TextView
+            style="@style/titletext"
+            android:layout_centerInParent="true"
+            android:text="套餐名称"
+            android:textColor="#fff"
+            android:id="@+id/shake_dialog_package_name" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/shake_dialog_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/shake_dialog_makesure"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="#dd613d"
+            android:text="下单"
+            android:textColor="@color/button_color" />
+
+        <Button
+            android:id="@+id/shake_dialog_continue"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="#4dee9e"
+            android:text="继续摇"
+            android:textColor="@color/button_color" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shake_dialog_button_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:text="￥0.00" />
+
+    <ListView
+        android:id="@+id/list_shake_dialog_dish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/total_price"
+        android:layout_below="@id/head_shake_dialog" >
+    </ListView>
+
+</RelativeLayout>

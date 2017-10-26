@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <RelativeLayout
+        android:id="@+id/offen_title_layout"
+        style="@style/titlebar" >
+    
+	    <TextView
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentBottom="true"
+	    android:text="常去的店"
+	    android:textSize="24sp"
+	    android:gravity="center"
+	    android:textColor="#000000"
+	     />
+	    <ImageView    
+	        android:id="@+id/offen_back"
+	        android:layout_centerVertical="true"
+	        style="@style/backimg"/>
+	    
+	    <ImageView 
+	        android:layout_alignParentBottom="true"
+	        style="@style/title_divider"/>
+	    
+	    <ImageView 
+	        android:layout_height="45dp"
+	        android:layout_width="45dp"
+	        android:src="@drawable/edit"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/offen_edit"
+	        android:visibility="gone"/>
+    </RelativeLayout>
+    
+     <FrameLayout 
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:layout_below="@id/offen_title_layout">
+	    <ImageView 
+	        android:id="@+id/offen_error"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:src="@drawable/error"
+	        android:background="#ffffff"
+	        android:scaleType="centerInside"
+	        android:visibility="gone"/>
+	    <ProgressBar 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:id="@+id/offen_load"
+	        style="@style/progressbar_style1"
+	        android:layout_gravity="center_vertical|center_horizontal"/>
+	     <ListView 
+	         android:layout_height="wrap_content"
+	         android:layout_width="match_parent"
+	         android:id="@+id/offen_list"
+	         android:background="#ffffff"
+	         android:visibility="gone"/>
+     </FrameLayout>
+
+</RelativeLayout>

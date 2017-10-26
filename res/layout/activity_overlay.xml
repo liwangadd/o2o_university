@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rll_title"
+        style="@style/titlebar"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/overlay_return"
+            style="@style/backimg"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            style="@style/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="您的位置" />
+
+        <ImageView
+            style="@style/title_divider"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <FrameLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+	    <com.baidu.mapapi.map.MapView
+	        android:id="@+id/bmapView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" />
+		<RelativeLayout 
+		    android:id="@+id/overlay_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="72dp"
+	    android:background="#ffffff"
+	    android:descendantFocusability="blocksDescendants"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="6dp"
+	    android:paddingRight="6dp"
+	    android:layout_gravity="bottom" >
+	
+	    <ImageView
+	        android:id="@+id/img_store"
+	        android:layout_width="68dp"
+	        android:layout_height="68dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="4dp"
+	        android:src="@drawable/danta" />
+	
+		    <RelativeLayout
+		        android:id="@+id/overlay_itemtop"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/img_store"
+		        android:orientation="horizontal"
+		        android:layout_alignTop="@+id/img_store" >
+		
+		        <TextView
+		            android:id="@+id/overlay_storedistance"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:text="1000米"
+		            android:textColor="#7f7f7f"
+		            android:textSize="12sp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="24dp" />
+		
+		        <TextView
+		            android:id="@+id/overlay_storename"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_alignParentTop="true"
+		            android:text="肯德基送麦当劳"
+		            android:textColor="#404143"
+		            android:textSize="20sp"
+		            android:layout_marginLeft="5dp" />
+		
+		    </RelativeLayout>
+		
+		    <RelativeLayout 
+		        android:id="@+id/overlay1"
+		        android:layout_height="match_parent"
+		        android:layout_width="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:orientation="horizontal"
+		        android:layout_below="@id/overlay_itemtop"
+		        android:layout_marginTop="13dp"
+		        android:layout_toRightOf="@id/img_store">
+		        <TextView 
+		            android:id="@+id/out1"
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:textSize="12sp"
+		            android:textColor="#7f7f7f"
+		            android:text="配送时间 :"
+		            android:layout_marginLeft="5dp"/>
+		        
+		        <TextView 
+		            android:id="@+id/overlay_ifstoreopen"
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:textSize="12sp"
+		            android:textColor="#7f7f7f"
+		            android:text="24:00-24:00"
+		            android:layout_toRightOf="@id/out1"
+		            android:layout_marginLeft="2dp"/>
+		        
+		        <TextView 
+		            android:id="@+id/overlay_delivery"
+		            android:layout_toRightOf="@+id/overlay_ifstoreopen"
+		            android:text="满999元免费配送"
+		            android:background="@drawable/store_list"
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:textSize="12sp"
+		            android:textColor="#ffff"
+		            android:layout_marginLeft="13dp"/>
+		    </RelativeLayout>
+		    <ImageView 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:src="@drawable/map_lead"/>
+	    </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

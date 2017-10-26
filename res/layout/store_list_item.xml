@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="10dp"
+    android:paddingBottom="6dp"
+    android:paddingRight="6dp"
+    android:minHeight="70dp" >
+
+    <ImageView
+        android:id="@+id/img_store"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/danta" />
+
+    <RelativeLayout
+        android:id="@+id/ll_itemtop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_store"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/img_store" >
+
+        <TextView
+            android:id="@+id/txt_storedistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="1000km"
+            android:textColor="#7f7f7f"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+        
+
+        <TextView
+            android:id="@+id/txt_storename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="肯德基送麦当劳"
+            android:textColor="#404143"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/mark1"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/ll_itemtop"
+        android:layout_toRightOf="@id/img_store">
+        <TextView 
+            android:id="@+id/out1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#7f7f7f"
+            android:text="配送时间 :"
+            android:layout_marginLeft="5dp"/>
+        
+        <TextView 
+            android:id="@+id/txt_ifstoreopen"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#7f7f7f"
+            android:text="24:00-24:00"
+            android:layout_toRightOf="@id/out1"
+            android:layout_marginLeft="2dp"/>
+        
+        <TextView 
+            android:id="@+id/txt_delivery"
+            android:layout_toRightOf="@+id/txt_ifstoreopen"
+            android:text="满999元免费配送"
+            android:background="@drawable/store_list"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="13dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_itembottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_store"
+        android:layout_below="@+id/mark1"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:id="@+id/out2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="月销量 :"
+            android:textColor="#7f7f7f"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_storesales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="80"
+            android:textColor="#7f7f7f"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/out2" />
+        
+        
+        <TextView 
+		    android:id="@+id/txt_min"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:textSize="12sp"
+		    android:textColor="#7f7f7f"
+		    android:layout_alignParentRight="true"
+		    android:text="15元"
+		    android:layout_marginLeft="2dp"/>
+		<TextView
+	            android:id="@+id/out4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="配送费 :"
+	            android:textColor="#7f7f7f"
+	            android:textSize="12sp"
+	            android:layout_toLeftOf="@id/txt_min" />
+		
+        
+    </RelativeLayout>
+
+</RelativeLayout>

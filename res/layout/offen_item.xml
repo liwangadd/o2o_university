@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp" >
+    
+    <ImageView 
+        android:id="@+id/offen_item_icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/kfc"
+        android:layout_marginLeft="8dp"/>
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/offen_item_name"
+        android:textColor="#404143"
+        android:textSize="17sp"
+        android:text="肯德基糖醋里脊盖饭"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/offen_item_icon"
+        android:layout_alignTop="@id/offen_item_icon" />
+    
+    <TextView 
+        android:id="@+id/offen_item_price_haha"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="起送价 : ￥"
+        android:textColor="#ec5b51"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/offen_item_icon"
+        android:layout_alignBottom="@id/offen_item_icon"
+        android:textSize="12sp"/>
+    
+    <TextView 
+        android:id="@+id/offen_item_price"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="15.00元"
+        android:textColor="#ec5b51"
+        android:layout_toRightOf="@id/offen_item_price_haha"
+        android:layout_alignBottom="@id/offen_item_price_haha"
+        android:textSize="12sp"/>
+    
+    <TextView 
+        android:id="@+id/offen_item_count_haha"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="月销量 : "
+        android:textColor="#7f7f7f"
+        android:layout_toRightOf="@id/offen_item_price"
+        android:layout_marginLeft="7dp"
+        android:layout_alignBottom="@id/offen_item_price_haha"
+        android:textSize="12sp"/>
+    
+    <TextView 
+        android:id="@+id/offen_item_count"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="100"
+        android:textColor="#7f7f7f"
+        android:layout_toRightOf="@id/offen_item_count_haha"
+        android:layout_alignBottom="@id/offen_item_price_haha"
+        android:textSize="12sp"/>
+    
+    <ImageView 
+        android:id="@+id/offen_item_delete"
+        android:layout_height="18dp"
+        android:layout_width="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/delete"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

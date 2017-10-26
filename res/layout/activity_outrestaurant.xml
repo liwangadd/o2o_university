@@ -1,0 +1,268 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".OutrestaurantActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rll_title"
+        style="@style/titlebar"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_return"
+            style="@style/backimg"
+            android:layout_centerVertical="true" />
+
+        <ProgressBar
+            android:id="@+id/storemap_progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/img_map"
+            android:layout_toRightOf="@id/img_return"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_location"
+            style="@style/titletext"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_map"
+            android:layout_toRightOf="@id/img_return"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="大连理工大学大学（西门）"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/mapstore_progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_map"
+            style="@style/titleicon"
+            android:layout_width="42dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/map"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp" />
+
+        <ImageView
+            style="@style/title_divider"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rll_title"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/outer_classify_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/classify" />
+
+            <Button
+                android:id="@+id/outer_classify"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/outer_classify_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/down" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="36dp"
+            android:background="@drawable/divider_vertical" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/outer_order_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/order" />
+
+            <Button
+                android:id="@+id/outer_order"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/outer_order_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/down" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="36dp"
+            android:background="@drawable/divider_vertical" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/outer_special_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/special" />
+
+            <Button
+                android:id="@+id/outer_special"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/outer_special_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/down" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_spinner" >
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/error"
+            android:background="#ffffff"
+            android:scaleType="centerInside"
+            android:id="@+id/out_error"
+            android:visibility="gone"/>
+	    <RelativeLayout 
+	        android:id="@+id/outresturant_layout"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:layout_below="@id/ll_spinner">
+	
+		    <ProgressBar
+		        android:id="@+id/store_progress_bar"
+		        style="@style/progressbar_style1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:visibility="gone" />
+		
+		    <RelativeLayout
+		        android:id="@+id/outrestaurant_relative_layout"
+		        android:layout_width="280dp"
+		        android:layout_height="48dp"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginBottom="2dp"
+		        android:layout_marginTop="2dp"
+		        android:background="@drawable/send" >
+		
+		        <TextView
+		            android:id="@+id/text1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="4dp"
+		            android:gravity="center_vertical"
+		            android:text="看看!"
+		            android:textColor="#e8e8e8"
+		            android:textSize="13sp" />
+		
+		        <TextView
+		            android:id="@+id/text2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:layout_toLeftOf="@id/text1"
+		            android:gravity="center_vertical"
+		            android:text="我的订单"
+		            android:textColor="#404143"
+		            android:textSize="13sp" />
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:layout_marginLeft="18dp"
+		            android:layout_toLeftOf="@id/text2"
+		            android:gravity="center_vertical"
+		            android:text="这个查看店铺太累？去"
+		            android:textColor="#e8e8e8"
+		            android:textSize="13sp" />
+		    </RelativeLayout>
+		
+		    <ImageView
+		        android:id="@+id/temp_divider"
+		        android:layout_width="match_parent"
+		        android:layout_height="1dp"
+		        android:layout_above="@id/outrestaurant_relative_layout"
+		        android:background="@drawable/divider_vertical" />
+		
+		    <com.yijianzhai.jue.view.XListView
+		        android:id="@+id/list_outstore"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_above="@id/temp_divider"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginTop="4dp"
+		        android:background="#ffffff"
+		        android:dividerHeight="1dp"
+		        android:headerDividersEnabled="true"
+		        android:paddingLeft="4dp"
+		        android:paddingRight="4dp"
+		        android:scrollbarAlwaysDrawVerticalTrack="true"
+		        android:scrollbars="none"
+		        android:visibility="gone" >
+		    </com.yijianzhai.jue.view.XListView>
+	    </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

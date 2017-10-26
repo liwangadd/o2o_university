@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="outer_classify">
+        <item >全部分类</item>
+        <item >中式分类</item>
+        <item >西式分类</item>
+        <item >港式分类</item>
+        <item >奶茶分类</item>
+        <item >烧烤分类</item>
+        <item >日式分类</item>
+        <item >韩式分类</item>
+        <item >甜点分类</item>
+        <item >汉堡分类</item>
+        <item >清真分类</item>
+    </string-array>
+    
+    <string-array name="outer_order">
+        <item >默认排序</item>
+        <item >距离排序</item>
+        <item >销售排序</item>
+        <item >送餐时间</item>
+    </string-array>
+    
+    <string-array name="outer_special">
+        <item >无配送费</item>
+        <item >分钟送达</item>
+    </string-array>
+</resources>

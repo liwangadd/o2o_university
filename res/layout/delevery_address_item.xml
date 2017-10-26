@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adress_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp" >
+
+    <TextView
+        android:id="@+id/delevery_address_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="3dp"
+        android:text="小A"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/delevery_address_phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/delevery_address_username"
+        android:text="188********"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/delevery_address_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/delevery_address_phonenumber"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/button_shape_selector"
+        android:text="设为默认地址"
+        android:textColor="@color/button_color" />
+
+    <TextView
+        android:id="@+id/delevery_address_select_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/delevery_address_phonenumber"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4dp"
+        android:text="默认地址"
+        android:textColor="#ef515b"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/delevery_address_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delevery_address_username"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="3dp"
+        android:text="大连"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/delevery_address_zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delevery_address_phonenumber"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/delevery_address_city"
+        android:text="开发区"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/delevery_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delevery_address_phonenumber"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/delevery_address_zone"
+        android:text="大连理工大学软件学院"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/delevery_address_detail_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/delevery_school"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="6dp"
+        android:text="6舍"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/adress_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/delevery_address_detail_address"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/delevery_school"
+        android:layout_marginRight="8dp"
+        android:text="修改"
+        android:textColor="#7f7f7f"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/adress_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/delevery_address_detail_address"
+        android:layout_below="@id/delevery_school"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/adress_change"
+        android:text="删除"
+        android:textColor="#7f7f7f"
+        android:visibility="gone" />
+
+</RelativeLayout>
